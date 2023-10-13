@@ -1,11 +1,10 @@
 import React from "react";
-import PictureIcon from "../Icons/PictureIcon";
 
-export default function Register () {
+export default function Login () {
     return (
         <div className="container">
-             <div className="register">
-                <h1 className="register-title">Register</h1>
+             <div className="login">
+                <h1 className="register-title">Login</h1>
                 <form className="form">
                     <div className="input-group">
                         <label>Username</label>
@@ -14,20 +13,16 @@ export default function Register () {
                     <div className="input-group">
                         <label>Password</label>
                         <input className="input-classic" type="password" name="password" id="password" placeholder="" />
-                    </div>
-                    <div className="input-group avatar">
-                        <label htmlFor="file">
-                            <PictureIcon />
-                            <p>Add an avatar</p>
-                        </label>
-                        <input className="input-classic avatar" type="file" name="file" id="file" placeholder="" />
+                        <div className="forgot">
+                            <a rel="noopener noreferrer" href="#">Forgot Password ?</a>
+                        </div>
                     </div>
                     <button className="sign">
-                        Sign Up
+                        Log In
                         <span></span>
                     </button>
                 </form>
-                <p className="signup">Already have an account? <a rel="noopener noreferrer" href="#" className="">Log in</a>
+                <p className="signup">Don't have an account? <a rel="noopener noreferrer" href="#" className="">Sign Up</a>
                 </p>
              </div>
         </div>
