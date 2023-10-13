@@ -23,3 +23,4 @@ yarn-debug.log*
 yarn-error.log*
 
 src/Images/
+src/send-4008.svg

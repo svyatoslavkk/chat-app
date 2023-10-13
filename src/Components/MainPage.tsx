@@ -46,7 +46,7 @@ export default function MainPage () {
             <main>
                 <div className="input-search-block">
                     <SearchIcon />
-                    <input className="input-search" placeholder="Search" />
+                    <input className="input-classic" placeholder="Search" />
                 </div>
                 <div className="recommended-block">
                     <h2 className="slider-title">Chatrooms</h2>
@@ -63,7 +63,10 @@ export default function MainPage () {
                     {chats.map((item: any) => (
                     <div className="chat-item">
                         <div className="info">
-                            <img className="user-image" src={avatarImg} alt="User Image" />
+                            <div className="user-image-content">
+                                <div className="counter-new-messages">+1</div>
+                                <img className="user-image" src={avatarImg} alt="User Image" />
+                            </div>
                             <div className="text-info">
                                 <h4 className="username">{item.username}</h4>
                                 <p className="last-message">{item.message}</p>
